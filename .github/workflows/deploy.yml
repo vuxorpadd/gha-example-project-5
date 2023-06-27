@@ -6,8 +6,8 @@ on:
       - dev
 env:
   CACHE_KEY: node-deps
-  MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}
-  MONGODB_CLUSTER_ADDRESS: ${{ env.MONGODB_CLUSTER_ADDRESS }}
+  MONGODB_DB_NAME: ${{ vars.MONGODB_DB_NAME }}
+  MONGODB_CLUSTER_ADDRESS: ${{ vars.MONGODB_CLUSTER_ADDRESS }}
 jobs:
   test:
     environment: testing
